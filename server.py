@@ -5,7 +5,7 @@ from ultralytics import YOLO
 from gtts import gTTS
 
 app = Flask(__name__)
-model = YOLO("C:/Users/SHOVIK/Downloads/weights-20250114T103625Z-001/weights/best.pt")
+model = YOLO("https://github.com/chakrabortyshovik/asl_video_call/blob/main/best.pt")
 
 @app.route('/')
 def index():
