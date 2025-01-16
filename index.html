@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gesture-Based Video Calling Platform</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        #root {
+            width: 100%;
+            height: 60vh;
+            margin: auto;
+            border: 1px solid #ccc;
+        }
+        #controls {
+            margin-top: 20px;
+        }
+        textarea {
+            width: 80%;
+            margin-top: 10px;
+            resize: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Gesture-Based Video Calling Platform</h1>
+    <div id="root"></div>
+    <div id="controls">
+        <textarea id="gesture-text-box" rows="4" placeholder="Detected ASL text will appear here..." readonly></textarea>
+        <textarea id="speech-text-box" rows="4" placeholder="Received speech-to-text will appear here..." readonly></textarea>
+        <button onclick="speakGestureText()">Speak Gesture Text</button>
+        <button onclick="clearTextBoxes()">Clear</button>
+    </div>
+
+    <script src="https://resource.zegocloud.com/prebuilt/crypto-js.js"></script>
+    <script src="https://resource.zegocloud.com/prebuilt/prebuiltToken.js"></script>
+    <script src="https://zegocloud.github.io/zegocloud_prebuilt_webrtc/ZegoPrebuilt/index.umd.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
