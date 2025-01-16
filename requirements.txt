@@ -1,7 +1,0 @@
-Flask==2.2.3
-opencv-python-headless==4.7.0.72
-numpy==1.24.4
-ultralytics==8.0.57
-gTTS==2.3.2
-gunicorn==20.1.0
-
